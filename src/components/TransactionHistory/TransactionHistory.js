@@ -23,6 +23,6 @@ const TransactionHistory = ({ items }) => (
   </table>
 );
 TransactionHistory.propTypes = {
-  items: T.array.isRequired,
+  items: T.arrayOf(T.string),
 };
 export default TransactionHistory;

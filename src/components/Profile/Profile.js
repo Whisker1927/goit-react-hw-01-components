@@ -20,5 +20,6 @@ Profile.propTypes = {
   tag: T.string.isRequired,
   location: T.string.isRequired,
   avatar: T.string.isRequired,
+  stats: T.objectOf(T.number).isRequired,
 };
 export default Profile;

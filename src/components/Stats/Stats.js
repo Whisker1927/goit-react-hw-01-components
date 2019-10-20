@@ -1,6 +1,6 @@
 import React from 'react';
-import styles from './stats.module.css';
 import T from 'prop-types';
+import styles from './stats.module.css';
 
 const Stats = ({ title, stats }) => (
   <section className={styles.stats}>
@@ -20,6 +20,7 @@ Stats.defaultProps = {
 };
 
 Stats.propTypes = {
+  title: T.string,
   stats: T.arrayOf(
     T.shape({
       id: T.string.isRequired,

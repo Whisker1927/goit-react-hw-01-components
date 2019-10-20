@@ -3,7 +3,7 @@ import T from 'prop-types';
 import styles from './profile.module.css';
 
 const StatsItem = ({ statsItem, quantity }) => {
-  let formatedQuantity = quantity.toString();
+  const formatedQuantity = quantity.toString();
 
   return (
     <li className={styles.item}>

@@ -8,7 +8,7 @@ import FriendList from './FriendList/FriendList';
 import friends from './FriendList/friends.json';
 import TransactionHistory from './TransactionHistory/TransactionHistory';
 import transaction from './TransactionHistory/transaction.json';
-
+console.log(friends);
 const App = () => (
   <div className={styles.container}>
     <Profile
