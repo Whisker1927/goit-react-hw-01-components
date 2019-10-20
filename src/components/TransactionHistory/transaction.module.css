@@ -1,0 +1,31 @@
+.transaction__history {
+  box-shadow: 0px 1px 4px 0px rgba(184, 184, 184, 1);
+  border-width: 1px;
+  border-collapse: collapse;
+  border-radius: 4px;
+  overflow: hidden;
+  width: 30%;
+}
+
+.tablerow {
+  background-color: rgb(65, 105, 225);
+}
+
+.tablehead {
+  padding: 10px 20px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  border-right: 1px solid #fff;
+}
+
+.column {
+  width: 33.3%;
+  padding: 5px 20px;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+  border-left: 1px solid gray;
+}

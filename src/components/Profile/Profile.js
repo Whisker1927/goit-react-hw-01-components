@@ -1,28 +1,17 @@
 import React from 'react';
 import T from 'prop-types';
+import styles from './profile.module.css';
+import List from './List';
 
 const Profile = ({ name, tag, location, avatar, stats }) => (
-  <div className="profile">
-    <div className="description">
-      <img className="avatar" src={avatar} alt="user avatar" />
-      <p className="name">{name}</p>
-      <p className="tag">{tag}</p>
-      <p className="location">{location}</p>
+  <div className={styles.profile}>
+    <div className={styles.description}>
+      <img className={styles.avatar} src={avatar} alt="user avatar" />
+      <p className={styles.name}>{name}</p>
+      <p className={styles.tag}>{tag}</p>
+      <p className={styles.location}>{location}</p>
     </div>
-    <ul className="stats">
-      <li>
-        <span className="label" />
-        <span className="quantity">{stats}</span>
-      </li>
-      <li>
-        <span className="label" />
-        <span className="quantity">{stats}</span>
-      </li>
-      <li>
-        <span className="label" />
-        <span className="quantity">{stats}</span>
-      </li>
-    </ul>
+    <List stats={stats} />
   </div>
 );
 
@@ -31,6 +20,5 @@ Profile.propTypes = {
   tag: T.string.isRequired,
   location: T.string.isRequired,
   avatar: T.string.isRequired,
-  stats: T.number.isRequired,
 };
 export default Profile;
