@@ -4,7 +4,7 @@ import styles from './stats.module.css';
 
 const Stats = ({ title, stats }) => (
   <section className={styles.stats}>
-    <h2 className={styles.title}>{title}</h2>
+    {title && <h2 className={styles.title}>{title}</h2>}
     <ul className={styles.stat__list}>
       {stats.map(stat => (
         <li className={styles.item} key={stat.id}>
@@ -16,7 +16,7 @@ const Stats = ({ title, stats }) => (
   </section>
 );
 Stats.defaultProps = {
-  title: 'Upload stats',
+  title: '',
 };
 
 Stats.propTypes = {

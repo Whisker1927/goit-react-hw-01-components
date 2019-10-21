@@ -8,17 +8,11 @@ import FriendList from './FriendList/FriendList';
 import friends from './FriendList/friends.json';
 import TransactionHistory from './TransactionHistory/TransactionHistory';
 import transaction from './TransactionHistory/transaction.json';
-console.log(friends);
+
 const App = () => (
   <div className={styles.container}>
-    <Profile
-      name={user.name}
-      tag={user.tag}
-      location={user.location}
-      avatar={user.avatar}
-      stats={user.stats}
-    />
-    <Stats stats={stats} />
+    <Profile user={user} />
+    <Stats title="Upload stats" stats={stats} />
     <FriendList friends={friends} />
     <TransactionHistory items={transaction} />
   </div>
